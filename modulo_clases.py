@@ -111,10 +111,7 @@ class persona:  # creamos la clase de la cual derivan doctor,paciente,enfermero 
 class doctor(persona):
 
     def __init__(self, nombre, apellidos, dni, especialidad):
-        persona.__init__(self, nombre, apellidos, dni)
-        self.nombre = nombre
-        self.apellidos = apellidos
-        self.dni = dni
+        persona.__init__(self, nombre = nombre, apellidos = apellidos, dni = dni)
         self.especialidad = especialidad
 
     def fichar(self,entrada):
@@ -127,7 +124,7 @@ class doctor(persona):
     def diagnosticar_paciente(self, doctor, paciente):  # diagnosticamos pacientes
         num_random = random.randrange(1,
                                       10)  # generamos numero random si es mayor de 7 le asignamos una enfermedad si no a casa a reposar
-        if num_random > 0:
+        if num_random > 7:
             enfermedad_random = random.randrange(0,
                                                  3)  # elegir una enfermedad aleatoria de la lista de enfermedades creada en el main
             enfermo1 = enfermo(paciente.nombre, paciente.apellidos, paciente.dni,
@@ -139,27 +136,21 @@ class doctor(persona):
                                                                                                                  3)]))
             return enfermo1
         else:
-            "Se le ha mandado unas pastillas al paciente y ha sido mandado a casa"
+            print("Se le ha mandado unas pastillas al paciente {} y ha sido mandado a casa".format(paciente.nombre))
             return None
 
 
 class enfermero(persona):
 
     def __init__(self, nombre, apellidos, dni, planta):
-        persona.__init__(self, nombre, apellidos, dni)
-        self.nombre = nombre
-        self.apellidos = apellidos
-        self.dni = dni
+        persona.__init__(self, nombre = nombre, apellidos = apellidos, dni = dni)
         self.planta = planta
 
 
 class paciente(persona):
 
     def __init__(self, nombre, apellidos, dni, sintomas, enfermedades):
-        persona.__init__(self, nombre, apellidos, dni)
-        self.nombre = nombre
-        self.apellidos = apellidos
-        self.dni = dni
+        persona.__init__(self, nombre = nombre, apellidos = apellidos, dni = dni)
         self.sintomas = sintomas
         self.enfermedades = enfermedades
 
@@ -167,9 +158,6 @@ class paciente(persona):
 class enfermo(persona):
 
     def __init__(self, nombre, apellidos, dni, enfermedad):
-        persona.__init__(self, nombre, apellidos, dni)
-        self.nombre = nombre
-        self.apellidos = apellidos
-        self.dni = dni
+        persona.__init__(self, nombre = nombre, apellidos = apellidos, dni = dni)
         self.enfermedad = enfermedad
         self.habitacion = None
