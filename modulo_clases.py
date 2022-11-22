@@ -29,13 +29,15 @@ class hospital:
         while (self.hay_pacientes() > 0):  # miramos si hay pacientes en la sala de espera
             for consulta in self.consultas:  # recorremos las consultas
                 for enfermero in self.enfermeros:  # recorremos enfermeros para atender a pacientes
+                    enfermero.ocupado = False
                     if self.hay_pacientes() > 0:
                         paciente = self.pacientes.pop(
                             0)  # guardamos en paciente el paciente posicion 0 y lo borramos de los pacientes en sala de espera
                         consulta.paciente = paciente  # guardamos en consulta el paciente que esta siendo atendido
                         print("El enfermero {} ha llevado al paciente {} a la consulta {}".format(enfermero.nombre,
-                                                                                                  paciente.nombre,
+                                                                                                 paciente.nombre,
                                                                                                   consulta.id))
+                        enfermero.ocupado = True
                         if consulta.id == 1:  # si la consulta es la uno le atendera el doctor1
                             enfermo = self.doctor[0].diagnosticar_paciente(self.doctor[0],
                                                                            paciente)  # diagnostica al paciente y devuelve el paciente para que le pasemos a enfermo o devuelve none
@@ -52,6 +54,7 @@ class hospital:
                         print("No quedan pacientes por atender")
 
                     self.llevar_habitacion()  # llevamos los enfermos a la habitacion
+
 
     def llevar_habitacion(self):
         for habitacion in self.habitaciones:  # recorremos habitaciones para ver si estan vacias
@@ -142,9 +145,10 @@ class doctor(persona):
 
 class enfermero(persona):
 
-    def __init__(self, nombre, apellidos, dni, planta):
+    def __init__(self, nombre, apellidos, dni, planta, ocupado = False):
         persona.__init__(self, nombre = nombre, apellidos = apellidos, dni = dni)
         self.planta = planta
+        self.ocupado = ocupado
 
 
 class paciente(persona):
