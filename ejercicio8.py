@@ -5,7 +5,13 @@ import random
 from TemperatureException import TemperatureException, TooHotTemperatureException,TooColdTemperatureException
 
 
-log.basicConfig(filename='logs/Bar_Cafe.log', encoding='utf-8', level=log.DEBUG)
+log.basicConfig(level=log.INFO,
+                format='%(asctime)s: %(levelname)s [%(filename)s:%(lineno)s] %(message)s',
+                datefmt='%I:%M:%S %p',
+                handlers=[
+                    log.FileHandler('logs/Bar_Cafe.log'),
+                    log.StreamHandler()
+                ])
 
 class TazaCafe:
     def __init__(self,tipocafe,temperatura):
@@ -17,28 +23,15 @@ class Persona(ABC):
         self.nombre = nombre
 
 class Cliente(Persona):
-    def __init__(self,nombre):
-        super().__init__(nombre = nombre)
-    
+
     def tomar_taza(self,tazacafe):
         log.info("El cliente {} se ha tomado la taza de cafe".format(self.nombre))
-        try:
-            if tazacafe.temperatura >70:
-                log.info("El cliente {} ha dicho que el cafe estaba muy caliente".format(self.nombre))
-                raise TooHotTemperatureException("Cafe muy caliente")
-            else:
-                log.info("El cliente {} ha dicho que el cafe estaba muy frio".format(self.nombre))
-                raise TooColdTemperatureException("Cafe muy frio")
-        except ZeroDivisionError as e:
-            print(f'ZeroDivisionError - Ocurrió un error: {e} , {type(e)}')
-        except TypeError as e:
-            print(f'TypeError - Ocurrió un error: {e} , {type(e)}')
-        except Exception as e:
-            print(f'Exception - Ocurrió un error: {e} , {type(e)}')
-        else:
-            print('No se arrojó ninguna excepción')
-        finally:
-            print('Ejecución del bloque finally')
+        if tazacafe.temperatura > 70:
+            log.info("El cliente {} ha dicho que el cafe estaba muy caliente".format(self.nombre))
+            raise TooHotTemperatureException("Cafe muy caliente")
+        elif tazacafe.temperatura < 20:
+            log.info("El cliente {} ha dicho que el cafe estaba muy frio".format(self.nombre))
+            raise TooColdTemperatureException("Cafe muy frio")
 
 
 class Camarero(Persona):
@@ -59,7 +52,18 @@ class Bar:
         tipo_cafe = pide_datos("Preguntar al cliente como quiere el cafe: {}  :".format(tipos_cafe))
         taza_cafe = TazaCafe(tipo_cafe,random.randint(1,100))
         camarero.servir_taza(taza_cafe,cliente)
-        cliente.tomar_taza(taza_cafe)
+        try:
+            cliente.tomar_taza(taza_cafe)
+        except TooHotTemperatureException as thte:
+            log.error(thte.message)
+        except TooColdTemperatureException as tcte:
+            log.error(tcte.message)
+        except Exception as e:
+            log.error("El cliente se queja de algo")
+        else:
+            log.info("Se ha tomado el cafe muy agusto")
+
+
 
 
 

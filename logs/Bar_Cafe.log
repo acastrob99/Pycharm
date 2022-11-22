@@ -1,21 +1,26 @@
 INFO:root:Se ha servido el cafe
-INFO:root:Se ha servido el cafe
-INFO:root:El cliente Pepe ha dicho que el cafe estaba muy frio
-INFO:root:Se ha servido el cafe
-INFO:root:El cliente Pepe ha dicho que el cafe estaba muy frio
-INFO:root:Se ha servido el cafe
-INFO:root:El cliente Pepe ha dicho que el cafe estaba muy frio
-INFO:root:Se ha servido el cafe
-INFO:root:El cliente Pepe ha dicho que el cafe estaba muy frio
-INFO:root:Se ha servido el cafe
-INFO:root:El cliente Pepe ha dicho que el cafe estaba muy frio
-INFO:root:Se ha servido el cafe
-INFO:root:Se ha servido el cafe
-INFO:root:El cliente Pepe ha dicho que el cafe estaba muy frio
-INFO:root:Se ha servido el cafe
-INFO:root:El cliente Pepe ha dicho que el cafe estaba muy frio
-INFO:root:Se ha servido el cafe
-INFO:root:El cliente Pepe ha dicho que el cafe estaba muy frio
-INFO:root:Se ha servido el cafe
 INFO:root:El cliente Pepe se ha tomado la taza de cafe
 INFO:root:El cliente Pepe ha dicho que el cafe estaba muy frio
+ERROR:root:Cafe muy frio
+10:01:35 AM: INFO [ejercicio8.py:44] Se ha servido el cafe
+10:01:35 AM: INFO [ejercicio8.py:29] El cliente Pepe se ha tomado la taza de cafe
+10:01:35 AM: INFO [ejercicio8.py:31] El cliente Pepe ha dicho que el cafe estaba muy caliente
+10:01:35 AM: ERROR [ejercicio8.py:59] Cafe muy caliente
+10:09:56 AM: INFO [ejercicio8.py:43] Se ha servido el cafe
+10:09:56 AM: INFO [ejercicio8.py:28] El cliente Pepe se ha tomado la taza de cafe
+10:09:56 AM: INFO [ejercicio8.py:30] El cliente Pepe ha dicho que el cafe estaba muy caliente
+10:09:56 AM: ERROR [ejercicio8.py:58] Cafe muy caliente
+10:10:02 AM: INFO [ejercicio8.py:43] Se ha servido el cafe
+10:10:02 AM: INFO [ejercicio8.py:28] El cliente Pepe se ha tomado la taza de cafe
+10:10:02 AM: INFO [ejercicio8.py:62] Se ha tomado el cafe muy agusto
+10:43:46 AM: INFO [ejercicio8.py:43] Se ha servido el cafe
+10:43:46 AM: INFO [ejercicio8.py:28] El cliente Pepe se ha tomado la taza de cafe
+10:43:46 AM: INFO [ejercicio8.py:64] Se ha tomado el cafe muy agusto
+10:43:55 AM: INFO [ejercicio8.py:43] Se ha servido el cafe
+10:43:55 AM: INFO [ejercicio8.py:28] El cliente Pepe se ha tomado la taza de cafe
+10:43:55 AM: INFO [ejercicio8.py:30] El cliente Pepe ha dicho que el cafe estaba muy caliente
+10:43:55 AM: ERROR [ejercicio8.py:58] Cafe muy caliente
+01:30:25 PM: INFO [ejercicio8.py:43] Se ha servido el cafe
+01:30:25 PM: INFO [ejercicio8.py:28] El cliente Pepe se ha tomado la taza de cafe
+01:30:25 PM: INFO [ejercicio8.py:30] El cliente Pepe ha dicho que el cafe estaba muy caliente
+01:30:25 PM: ERROR [ejercicio8.py:58] Cafe muy caliente
