@@ -24,3 +24,7 @@ ERROR:root:Cafe muy frio
 01:30:25 PM: INFO [ejercicio8.py:28] El cliente Pepe se ha tomado la taza de cafe
 01:30:25 PM: INFO [ejercicio8.py:30] El cliente Pepe ha dicho que el cafe estaba muy caliente
 01:30:25 PM: ERROR [ejercicio8.py:58] Cafe muy caliente
+01:52:34 PM: INFO [ejercicio8.py:43] Se ha servido el cafe
+01:52:34 PM: INFO [ejercicio8.py:28] El cliente Pepe se ha tomado la taza de cafe
+01:52:34 PM: INFO [ejercicio8.py:30] El cliente Pepe ha dicho que el cafe estaba muy caliente
+01:52:34 PM: ERROR [ejercicio8.py:58] Cafe muy caliente
