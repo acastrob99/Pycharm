@@ -1,0 +1,11 @@
+Colegio1|Nombre1|Apellidos1|1111A|Matemáticas;Lengua
+Colegio1|Nombre2|Apellidos2|2222B|Matemáticas;Física
+Colegio3|Nombre3|Apellidos3|3333C|Historia;Lengua
+Colegio1|Nombre4|Apellidos4|4444D|Matemáticas;Física;Química
+Colegio2|Nombre5|Apellidos5|5555E|Matemáticas;Lengua
+Colegio2|Nombre6|Apellidos6|6666F|Inglés
+Colegio3|Nombre7|Apellidos7|7777G|Gimnasia
+Colegio2|Nombre8|Apellidos8|8888H|Matemáticas;Lengua
+Colegio1|Nombre9|Apellidos9|9999I|Geografía
+Colegio3|Nombre10|Apellidos10|1010J|Geografís;Historia
+Colegio1|Nombre11|Apellidos11|1111K|Matemáticas;Química
