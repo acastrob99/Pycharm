@@ -6,8 +6,9 @@ try:
         with conexion.cursor() as cursor:
             sentencia = 'DELETE FROM productos WHERE id=%s'
             entrada = input('Proporciona el id del producto a eliminar: ')
-            valores = (entrada,)
+            valores = (entrada)
             cursor.execute(sentencia, valores)
+            conexion.commit()
             registros_eliminados = cursor.rowcount
             print(f'Registros Eliminados: {registros_eliminados}')
 except Exception as e:

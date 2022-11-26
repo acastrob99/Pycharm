@@ -1,0 +1,159 @@
+09:40:27 AM: INFO [create_table.py:13] dsa
+10:01:06 AM: INFO [create_table.py:28] Tabla creada correctamente
+10:13:11 AM: INFO [create_table.py:29] Tabla creada correctamente
+10:14:01 AM: INFO [create_table.py:31] Tabla creada correctamente
+10:14:01 AM: INFO [create_table.py:31] Tabla creada correctamente
+10:39:13 AM: INFO [create_table.py:33] Tabla creada correctamente
+10:51:56 AM: INFO [create_table.py:33] Tabla creada correctamente
+10:51:56 AM: INFO [create_table.py:33] Tabla creada correctamente
+10:51:56 AM: INFO [create_table.py:33] Tabla creada correctamente
+12:13:34 PM: INFO [apostantesDAO.py:50] fdsf
+12:13:43 PM: INFO [apostantesDAO.py:50] fdsf
+12:13:43 PM: INFO [apostantesDAO.py:53] productos insertada: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x000001C01918CB20>
+12:14:03 PM: INFO [apostantesDAO.py:53] productos insertada: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x000001B1D1FFCBB0>
+12:14:23 PM: INFO [apostantesDAO.py:53] productos insertada: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x000001D13EB0CA90>
+12:14:38 PM: INFO [apostantesDAO.py:50] pepe
+12:14:38 PM: INFO [apostantesDAO.py:53] productos insertada: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x000001E9A365CB50>
+12:14:49 PM: INFO [apostantesDAO.py:50] 400
+12:14:49 PM: INFO [apostantesDAO.py:53] productos insertada: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x000002792A34CB50>
+12:15:46 PM: INFO [apostantesDAO.py:52] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s,%s)
+12:16:06 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:18:54 PM: INFO [apostantesDAO.py:30] Tabla creada correctamente
+12:19:09 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:20:01 PM: INFO [apostantesDAO.py:51] ('pepe', 400)
+12:22:46 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:22:46 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:24:56 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:24:56 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:25:00 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:25:00 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:25:23 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:25:23 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:27:26 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+12:27:46 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:27:46 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:30:04 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:30:04 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:30:37 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:30:37 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:31:02 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:31:02 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:31:12 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:31:12 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:31:18 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:31:18 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:31:38 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:31:38 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:32:01 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:32:01 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:32:18 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:32:18 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:34:02 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:34:02 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:35:29 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:35:29 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:35:43 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:35:43 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:37:21 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+12:37:21 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+12:37:21 PM: INFO [apostantesDAO.py:52] ('pepe', 400)
+12:42:31 PM: INFO [apostantesDAO.py:42] <class 'Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes'>
+12:43:09 PM: INFO [apostantesDAO.py:42] [<Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x000001C36A60DF60>]
+12:43:16 PM: INFO [apostantesDAO.py:42] <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x000001F6FF40DF60>
+12:43:32 PM: INFO [apostantesDAO.py:42] pepe
+12:47:28 PM: INFO [apostantesDAO.py:42] pepe
+12:47:42 PM: INFO [apostantesDAO.py:42] pepe
+12:47:54 PM: INFO [apostantesDAO.py:42] pepe400
+12:49:11 PM: INFO [apostantesDAO.py:42] pepe,400
+12:49:23 PM: INFO [apostantesDAO.py:42] Nombre: pepe,Saldo: 400
+12:49:28 PM: INFO [apostantesDAO.py:42] Nombre: pepe, Saldo: 400
+12:52:02 PM: INFO [apostantesDAO.py:42] Nombre: pepe, Saldo: 400
+12:52:37 PM: INFO [apostantesDAO.py:42] Nombre: pepe, Saldo: 400
+01:00:54 PM: INFO [apostantesDAO.py:63] ('javi', 500, 2)
+01:01:07 PM: INFO [apostantesDAO.py:63] ('javi', 500, 1)
+01:03:22 PM: INFO [apostantesDAO.py:63] tabla apostante actualizada: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x0000018358DF5750>
+01:03:38 PM: INFO [apostantesDAO.py:63] tabla apostante actualizada: Alvaro300
+01:03:55 PM: INFO [apostantesDAO.py:63] tabla apostante actualizada: Nombre: Alvaro, Saldo:300
+02:24:14 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+02:24:14 PM: INFO [apostantesDAO.py:52] ('APOSTANTE1', '5000\n')
+02:24:14 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+02:24:14 PM: INFO [apostantesDAO.py:52] ('APOSTANTE2', '3000\n')
+02:24:14 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+02:24:14 PM: INFO [apostantesDAO.py:52] ('APOSTANTE3', '1000')
+02:26:47 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+02:26:47 PM: INFO [apostantesDAO.py:52] ('APOSTANTE1', '5000\n')
+02:26:47 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+02:26:47 PM: INFO [apostantesDAO.py:52] ('APOSTANTE2', '3000\n')
+02:26:47 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+02:26:47 PM: INFO [apostantesDAO.py:52] ('APOSTANTE3', '1000')
+02:26:57 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+02:26:57 PM: INFO [apostantesDAO.py:52] ('APOSTANTE1', '5000\n')
+02:26:57 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+02:26:57 PM: INFO [apostantesDAO.py:52] ('APOSTANTE2', '3000\n')
+02:26:57 PM: INFO [apostantesDAO.py:51] INSERT INTO apostantes(Nombre,Saldo) VALUES(%s, %s)
+02:26:57 PM: INFO [apostantesDAO.py:52] ('APOSTANTE3', '1000')
+02:27:53 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x0000025A9F785480>
+02:27:53 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x0000025A9F785810>
+02:27:53 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x0000025A9F7858A0>
+02:28:33 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x000001F1662A8430>
+02:28:33 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x000001F1662AAF20>
+02:28:33 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x000001F1662AB280>
+02:29:28 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+02:29:28 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x00000114F54354E0>
+02:29:28 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x00000114F54369B0>
+02:29:28 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x00000114F5437160>
+02:37:24 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+02:37:24 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x000002B3757C5600>
+02:37:24 PM: INFO [apostantesDAO.py:42] Nombre: APOSTANTE1, Saldo: 5000
+02:38:03 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+02:38:03 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x0000018C72F555D0>
+02:38:03 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x0000018C72F56AA0>
+02:38:03 PM: INFO [apostantesDAO.py:51] apostantes insertados: <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x0000018C72F57250>
+02:38:03 PM: INFO [apostantesDAO.py:42] Nombre: APOSTANTE3, Saldo: 1000
+02:40:45 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+02:41:26 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+02:41:26 PM: INFO [apostantesDAO.py:51] apostantes insertados: APOSTANTE1
+02:41:26 PM: INFO [apostantesDAO.py:51] apostantes insertados: APOSTANTE2
+02:41:26 PM: INFO [apostantesDAO.py:51] apostantes insertados: APOSTANTE3
+02:41:26 PM: INFO [apostantesDAO.py:42] Nombre: APOSTANTE3, Saldo: 1000
+02:44:18 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+02:44:18 PM: INFO [apostantesDAO.py:51] apostantes insertados: APOSTANTE1
+02:44:18 PM: INFO [apostantesDAO.py:51] apostantes insertados: APOSTANTE2
+02:44:18 PM: INFO [apostantesDAO.py:51] apostantes insertados: APOSTANTE3
+02:44:18 PM: INFO [apostantesDAO.py:42] Monstrando lista apostantes [<Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x00000168EBC4B040>, <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x00000168EBC4B340>, <Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes.apostantes object at 0x00000168EBC4B3D0>]
+02:46:33 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+02:46:33 PM: INFO [apostantesDAO.py:50] apostantes insertados: APOSTANTE1
+02:46:33 PM: INFO [apostantesDAO.py:50] apostantes insertados: APOSTANTE2
+02:46:33 PM: INFO [apostantesDAO.py:50] apostantes insertados: APOSTANTE3
+02:46:33 PM: INFO [apostantesDAO.py:60] tabla apostante actualizada: Nombre: Alvaro, Saldo:300
+02:47:02 PM: INFO [apostantesDAO.py:60] tabla apostante actualizada: Nombre: Alvaro, Saldo:300
+02:54:38 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+02:57:34 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+02:57:34 PM: INFO [apostantesDAO.py:50] apostantes insertados: APOSTANTE1
+02:57:34 PM: INFO [apostantesDAO.py:50] apostantes insertados: APOSTANTE2
+02:57:34 PM: INFO [apostantesDAO.py:50] apostantes insertados: APOSTANTE3
+03:02:57 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+03:02:57 PM: INFO [apostantesDAO.py:50] apostantes insertados: APOSTANTE1
+03:02:57 PM: INFO [apostantesDAO.py:50] apostantes insertados: APOSTANTE2
+03:02:57 PM: INFO [apostantesDAO.py:50] apostantes insertados: APOSTANTE3
+12:20:28 PM: INFO [caballosDAO.py:31] Tabla creada correctamente
+12:25:11 PM: INFO [gran_premioDAO.py:31] Tabla creada correctamente
+12:25:27 PM: INFO [caballosDAO.py:30] Tabla creada correctamente
+12:51:07 PM: INFO [gran_premioDAO.py:52] apostantes insertados: GRAN PREMIO 1
+12:51:07 PM: INFO [gran_premioDAO.py:52] apostantes insertados: GRAN PREMIO 2
+12:58:10 PM: INFO [caballosDAO.py:52] caballos insertados: CABALLO1
+12:58:10 PM: INFO [caballosDAO.py:52] caballos insertados: CABALLO2
+12:58:10 PM: INFO [caballosDAO.py:52] caballos insertados: CABALLO3
+12:58:10 PM: INFO [caballosDAO.py:52] caballos insertados: CABALLO4
+12:58:10 PM: INFO [caballosDAO.py:52] caballos insertados: CABALLO5
+01:11:08 PM: INFO [apostantesDAO.py:29] Tabla creada correctamente
+01:11:09 PM: INFO [apostantesDAO.py:50] apostantes insertados: APOSTANTE1
+01:11:09 PM: INFO [apostantesDAO.py:50] apostantes insertados: APOSTANTE2
+01:11:09 PM: INFO [apostantesDAO.py:50] apostantes insertados: APOSTANTE3
+03:18:59 PM: INFO [gran_premioDAO.py:44] None
+03:20:36 PM: INFO [gran_premioDAO.py:45] None
+03:20:47 PM: INFO [gran_premioDAO.py:45] None
+03:21:08 PM: INFO [gran_premioDAO.py:44] None
+03:52:07 PM: INFO [caballosDAO.py:62] tabla apostante actualizada: Nombre: caballopepe, Fecha_Nac:2007-3-19
+04:15:35 PM: INFO [apostantesDAO.py:71] tabla apostante actualizada
+04:27:53 PM: INFO [apostantesDAO.py:71] tabla apostante actualizada

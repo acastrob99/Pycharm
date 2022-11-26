@@ -5,7 +5,7 @@ try:
     with conexion:
         with conexion.cursor() as cursor:
             sentencia = 'UPDATE productos SET nombre=%s, precio=%s, fecha_registro=%s WHERE id=%s'
-            valores = ('Otro Prodcuto', 15000, datetime.now(), 1)
+            valores = ('Otro Producto', 15000, datetime.now(), 1)
             cursor.execute(sentencia, valores)
             conexion.commit()
             registros_actualizados = cursor.rowcount
