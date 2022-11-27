@@ -1,5 +1,10 @@
 import logging as log
+import random
+
 from Ejercicios.Carrera_Caballos.ficheros.funciones_ficheros import *
+from datetime import datetime
+from datetime import date
+from datetime import timedelta
 
 
 log.basicConfig(level=log.INFO,
@@ -23,6 +28,7 @@ class caballos:
         self._Experiencia = Experiencia
         self._Valor_Apuesta = Valor_Apuesta
         self._Id_Gran_Premio = Id_Gran_Premio
+        self._Distancia_Carrera = 0
 
 
     @property
@@ -81,21 +87,60 @@ class caballos:
     def Id_Gran_Premio(self, id_Gran_Premio):
         self._Id_Gran_Premio = id_Gran_Premio
 
+    @property
+    def Distancia_Carrera(self):
+        return self._Distancia_Carrera
+
+    @Distancia_Carrera.setter
+    def Distancia_Carrera(self, distancia_carrera):
+        self._Distancia_Carrera = distancia_carrera
+
+    def calcular_edad(self):
+        #año_caballo = int(self._Fecha_Nac.split('-')[0])
+        año_caballo = int(self._Fecha_Nac.year)
+        hoy = int(datetime.now().year)
+        return hoy - año_caballo
+
+
+    def correr(self):            #retorna un valor que se añadira a la distancia recorrida por el caballo en la carrera
+        return self.Velocidad+self.Experiencia-self.calcular_edad()+random.randint(1,50)
+    @classmethod
+    def sumar_exp_caballo(cls,list_caballos,gran_p,caballo_ganador):
+        for caballo in list_caballos:
+            caballo.Distancia_Carrera = 0
+            if caballo.Id_Gran_Premio == gran_p.Id and caballo_ganador is not caballo:
+                caballo.Experiencia = caballo.Experiencia + 1
+            elif caballo.Id_Gran_Premio == gran_p.Id:
+                caballo_ganador.Experiencia = caballo.Experiencia + 5
+
+
     @classmethod
     def crear_caballos_fichero(cls):  # creamos los apostantes sacandolos de un fichero
         fich_caballos = ficheros.caballos  # elegimos el fichero
         list_caballos = ficheros.leer_fichero(fich_caballos)  # creamos una lista de caballos extraidos en el metodo leer.fichero de la clase ficheros pasando el fichero
 
-
-        for caballo in list_caballos:  # recorremos apostantes
+        for caballo in list_caballos:  # recorremos caballos
             obj_caballo = caballos(caballo[0], caballo[1][0],caballo[1][1],caballo[1][2],caballo[1][3],caballo[1][4],caballo[1][5]) #creamos el objeto
             caballos._LIST_CABALLOS.append(obj_caballo)# añadimos objeto a la lista de objetos caballos
             #primero crear gran premio para que la foreing key no de error
 
 
+    @classmethod
+    def mostrar_caballos_carrera(cls,list_caballos,gran_p): ##muestra una lista con los nombres de caballo para que el apostante pueda ver a que caballos puede apostar
+        nombres_caballos = []
+        for caballo in list_caballos :
+            if caballo.Id_Gran_Premio == gran_p.Id:
+                nombres_caballos.append(caballo.Nombre)
+        return nombres_caballos
+
+
 
 if __name__ == "__main__":
-    pass
+    #pass
+    obj_caballo = caballos(1,"Pepe","2007-03-19",34,33,1,1)
+    print("ha corrido: ",obj_caballo.correr())
+
+
 
 
 

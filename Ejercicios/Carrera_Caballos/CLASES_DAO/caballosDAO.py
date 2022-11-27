@@ -15,7 +15,7 @@ class caballosDAO:
 
     _CREAR_TABLA =  'CREATE TABLE Caballos(Id_Caballo MEDIUMINT NOT NULL AUTO_INCREMENT,Nombre CHAR(30) NOT NULL,Fecha_Nac DATETIME NOT NULL,' \
                      'Velocidad MEDIUMINT  NOT NULL, Experiencia MEDIUMINT NOT NULL,Valor_Apuesta MEDIUMINT NOT NULL, Id_Gran_Premio MEDIUMINT NOT NULL, PRIMARY KEY (Id_Caballo),INDEX (Id_Gran_Premio),FOREIGN KEY (Id_Gran_Premio) REFERENCES gran_premio(Id_Gran_Premio));'
-    _SELECCIONAR = 'SELECT Id_Caballo,Nombre,Fecha_Nac FROM Caballos ORDER BY Id_Caballo'
+    _SELECCIONAR = 'SELECT Id_Caballo,Nombre,Fecha_Nac,Velocidad,Experiencia,Valor_Apuesta,Id_Gran_Premio FROM Caballos ORDER BY Id_Caballo'
     _INSERTAR = 'INSERT INTO Caballos(Nombre,Fecha_Nac,Velocidad,Experiencia,Valor_Apuesta,Id_Gran_Premio) VALUES(%s,%s,%s,%s,%s,%s)'
     _ACTUALIZAR = 'UPDATE Caballos SET Nombre=%s, Fecha_Nac=%s, Velocidad=%s, Experiencia=%s, Valor_Apuesta=%s, Id_Gran_Premio=%s WHERE Id_Caballo=%s'
     _ELIMINAR = 'DELETE FROM Caballos WHERE Id_Caballo=%s'
@@ -38,7 +38,7 @@ class caballosDAO:
                 registros = cursor.fetchall()
                 list_caballos = []
                 for registro in registros:
-                    caballo = [registro[0],registro[1],registro[2]]
+                    caballo = caballos(registro[0],registro[1],registro[2],registro[3],registro[4],registro[5],registro[6])
                     list_caballos.append(caballo)
                 return list_caballos
 
@@ -58,25 +58,23 @@ class caballosDAO:
         with conexion.cursor() as cursor:
             valores = (caballo.Nombre,caballo.Fecha_Nac,caballo.Velocidad,caballo.Experiencia,caballo.Valor_Apuesta,caballo.Id_Gran_Premio,caballo.Id)
             cursor.execute(cls._ACTUALIZAR, valores)
-            log.info(f'tabla apostante actualizada: Nombre: {caballo.Nombre}, Fecha_Nac:{caballo.Fecha_Nac}')
+            log.info(f'tabla caballos actualizada: Nombre: {caballo.Nombre}, Fecha_Nac:{caballo.Fecha_Nac}')
             conexion.commit()
             return cursor.rowcount
 
 
 
 if __name__ == "__main__":
-    #caballosDAO.crear_tabla()                        #creamos la tabla apostantes
+    pass
+    # caballosDAO.crear_tabla()                        #creamos la tabla apostantes
     # caballos.crear_caballos_fichero()              #creamos objetos de la clase apostantes a partir de un fichero
     # for caballo in caballos._LIST_CABALLOS:           #recorremos la lista de objetos apostantes y añadamimos cada un a un registro de la base de datos en la tabla apostantes
     #      caballosDAO.insertar(caballo)                   #los añadimos
     #print(caballosDAO.seleccionar()[0][2])               #selecionamos la lista de apostantes de base de datos y mostramos el primero
     # caballos = caballosDAO.seleccionar()
     # for caballo in caballos:
-    #     for dato in caballo:
+    #     print(caballo.Nombre)
     #         print(dato)
-    caballo2 = caballos(1,"caballopepe","2007-3-19",33,22,4,2)      #creamos un apostante a mano y le pasamos los valores para que los actualize segun el id que le pases
-    caballosDAO.actualizar(caballo2)              ##llamamaos a la funcion y le pasamos el apostante
+    #caballo2 = caballos(1,"caballopepe","2007-3-19",33,22,4,2)      #creamos un apostante a mano y le pasamos los valores para que los actualize segun el id que le pases
+    #caballosDAO.actualizar(caballo2)              ##llamamaos a la funcion y le pasamos el apostante
 
-
-
-#joseluis.llorenteperales@gmail.com

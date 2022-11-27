@@ -63,7 +63,7 @@ class apostantesDAO:
             return cursor.rowcount
 
     @classmethod
-    def actualizar_saldo(cls,id,new_atributo ):
+    def actualizar_saldo(cls,id,new_atributo):
         conexion = get_mysql_conection()
         with conexion.cursor() as cursor:
             valores = (new_atributo,id)
@@ -85,7 +85,7 @@ class apostantesDAO:
 
 
 if __name__ == "__main__":
-
+    pass
     # apostantesDAO.crear_tabla()                        #creamos la tabla apostantes
     # apostantes.crear_apostantes_fichero()              #creamos objetos de la clase apostantes a partir de un fichero
     # for apos in apostantes._LIST_APOSTANTES:           #recorremos la lista de objetos apostantes y añadamimos cada un a un registro de la base de datos en la tabla apostantes
@@ -94,8 +94,5 @@ if __name__ == "__main__":
     #apostante2 = apostantes(1, "Alvaro", 300)         #creamos un apostante a mano y le pasamos los valores para que los actualize segun el id que le pases
     #apostantesDAO.actualizar(apostante2)              ##llamamaos a la funcion y le pasamos el apostante
     #apostantesDAO.actualizar_saldo(1,5000)
-    apostantesDAO.eliminar()
+    #apostantesDAO.eliminar()
 
-
-
-#joseluis.llorenteperales@gmail.com

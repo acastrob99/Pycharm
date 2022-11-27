@@ -30,13 +30,6 @@ class ficheros:
 
 
 
-
-
-
-
-
-
-
 if __name__ == "__main__":
     apos = ficheros.leer_fichero(ficheros.grandes_premios)
     print(apos)
@@ -44,5 +37,3 @@ if __name__ == "__main__":
     print(apos[0][0],apos[0][1])
     print(apos[1][0],apos[1][1])
     print(apos[2][0],apos[2][1])
-
-    #ficheros.leer_fichero(ficheros.apostantes)

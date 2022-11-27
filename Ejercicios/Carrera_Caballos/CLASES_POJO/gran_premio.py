@@ -1,5 +1,7 @@
 import logging as log
 from Ejercicios.Carrera_Caballos.ficheros.funciones_ficheros import *
+from Ejercicios.Carrera_Caballos.CLASES_POJO.apostantes import *
+from Ejercicios.Carrera_Caballos.CLASES_POJO.caballos import *
 
 
 log.basicConfig(level=log.INFO,
@@ -23,7 +25,7 @@ class gran_premio:
 
     @property
     def Id(self):
-        return self.Id()
+        return self._Id
 
     @property
     def Nombre(self):
@@ -59,6 +61,17 @@ class gran_premio:
             print(obj_gran_premio.Num_Carreras)
             gran_premio._LIST_GRANDES_PREMIOS.append(obj_gran_premio)  # instaciamos un objeto de apostantes con datos del fichero
 
+    @classmethod
+    def pedir_apuestas(cls,apostantes,gran_p,carrera,list_caballos):
+        apostar = input("Desea apostar en este {} en la carrera {} (SI,NO): ".format(gran_p.Nombre,carrera+1))
+        if apostar.lower() == "si":
+            for apostante in apostantes:
+                if apostante.Saldo > 0:
+                    apostante.Caballo_Apostar = input("{} Carrera {} {} A que caballo desea apostar {},0 para no apostar: ".format(gran_p.Nombre,carrera+1,apostante.Nombre,caballos.mostrar_caballos_carrera(list_caballos,gran_p)))
+                    if not apostante.Caballo_Apostar == "0":
+                        apostante.Apuesta = int(input("{} Carrera {} {} Cuanto saldo desea apostar max {}: ".format(gran_p.Nombre,carrera+1,apostante.Nombre,apostante.Saldo)))
+
+        return carrera
 
 if __name__ == "__main__":
     gran_premio.crear_gran_premio_fichero()
